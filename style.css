@@ -1,0 +1,259 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#canvas-container {
+    border-radius: 50px;
+    overflow: hidden;
+    width: 90%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    /* cursor: url('../images/rocket.PNG'), pointer; */
+}
+
+/* @font-face {
+    font-family: 'ComicNeue-Bold';
+    src: url('.../fonts/ComicNeue-Bold.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+button {
+    user-select: none;
+    caret-color: transparent;
+    text-align: center;
+    font-weight: bold;
+    font-family: ComicNeue-Bold;
+    text-decoration: none;
+    background-color: rgb(240, 193, 40);
+    border: none;
+    color: rgb(108, 34, 178);
+    cursor: url('../images/rocket.PNG') 0 0, pointer;
+    display: inline-block;
+    border-radius: 30px;
+    transition-duration: 0.4s;
+}
+
+.btn {
+    /* title page */
+    padding: 8px 20px;
+    font-size: 20px;
+    margin: 4px 2px;
+    position: fixed;
+    top: 65%;
+    left: 41.3%;
+}
+
+.btn:hover {
+    background-color: rgb(240, 153, 40);
+    color: rgb(255, 255, 255);
+}
+
+.btn1 {
+    /* back */
+    padding: 8px 20px;
+    font-size: 20px;
+    margin: 4px 2px;
+    position: absolute;
+    top: 86%;
+    left: 7%;
+}
+
+.btn1:hover {
+    background-color: rgb(240, 153, 40);
+    color: rgb(255, 255, 255);
+}
+
+.btn2 {
+    /* dive into the milky way */
+    padding: 8px 20px;
+    font-size: 20px;
+    margin: 4px 2px;
+    position: absolute;
+    top: 86%;
+    left: 76.7%;
+}
+
+.btn2:hover {
+    background-color: rgb(240, 153, 40);
+    color: rgb(255, 255, 255);
+}
+
+.btn3 {
+    /* explore the solar system */
+    padding: 8px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 4px 2px;
+    position: absolute;
+    top: 86%;
+    left: 75.7%;
+}
+
+.btn3:hover {
+    background-color: rgb(240, 153, 40);
+    color: rgb(255, 255, 255);
+}
+
+.btn4 {
+    /* create your own planet */
+    padding: 8px 20px;
+    font-size: 20px;
+    margin: 4px 2px;
+    position: absolute;
+    top: 73%;
+    left: 41.3%;
+}
+
+.btn4:hover {
+    background-color: rgb(240, 153, 40);
+    color: rgb(255, 255, 255);
+}
+
+.btn5 {
+    /* next */
+    padding: 8px 20px;
+    font-size: 20px;
+    margin: 4px 2px;
+    position: absolute;
+    top: 86%;
+    left: 87.3%;
+}
+
+.btn5:hover {
+    background-color: rgb(240, 153, 40);
+    color: rgb(255, 255, 255);
+}
+
+.btn6 {
+    /* custom */
+    padding: 8px 20px;
+    font-size: 20px;
+    margin: 4px 2px;
+    position: absolute;
+    top: 86%;
+    left: 82%;
+}
+
+.btn6:hover {
+    background-color: rgb(240, 153, 40);
+    color: rgb(255, 255, 255);
+}
+
+@font-face {
+    font-family: 'MyFont';
+    src: url('../fonts/ChildosArabicDEMO-Light.otf');
+}
+
+@font-face {
+    font-family: 'BobbyJones';
+    src: url('../fonts/BobbyJones-Soft.otf');
+}
+
+#text-container,
+input,
+textarea {
+    user-select: none;
+    caret-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-family: 'MyFont';
+    font-size: 2vw;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    cursor: url('../images/rocket.PNG'), pointer;
+    transition: text-shadow 0.3s ease;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), -2px -2px 4px rgba(0, 0, 0, 0.3), 2px -2px 4px rgba(0, 0, 0, 0.3), -2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* instructions */
+#text-container2,
+input,
+textarea {
+    user-select: none;
+    caret-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-family: 'MyFont';
+    font-size: 1.3vw;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    cursor: url('../images/rocket.PNG'), pointer;
+    transition: text-shadow 0.3s ease;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), -2px -2px 4px rgba(0, 0, 0, 0.3), 2px -2px 4px rgba(0, 0, 0, 0.3), -2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#text-container3,
+input,
+textarea {
+    user-select: none;
+    caret-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-family: 'MyFont';
+    font-size: 1.5vw;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    cursor: url('../images/rocket.PNG'), pointer;
+    transition: text-shadow 0.3s ease;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), -2px -2px 4px rgba(0, 0, 0, 0.3), 2px -2px 4px rgba(0, 0, 0, 0.3), -2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#text-container4,
+input,
+textarea {
+    user-select: none;
+    caret-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-family: 'BobbyJones';
+    font-size: 4vw;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    cursor: url('../images/rocket.PNG'), pointer;
+    transition: text-shadow 0.3s ease;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), -2px -2px 4px rgba(0, 0, 0, 0.3), 2px -2px 4px rgba(0, 0, 0, 0.3), -2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* venus */
+#text-container5,
+input,
+textarea {
+    user-select: none;
+    caret-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-family: 'MyFont';
+    font-size: 2vw;
+    color: rgb(255, 255, 255);
+    text-align: right;
+    cursor: url('../images/rocket.PNG'), pointer;
+    transition: text-shadow 0.3s ease;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), -2px -2px 4px rgba(0, 0, 0, 0.3), 2px -2px 4px rgba(0, 0, 0, 0.3), -2px 2px 4px rgba(0, 0, 0, 0.3);
+}
